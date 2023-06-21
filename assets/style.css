@@ -1,0 +1,2332 @@
+        /* GLOBAL STYLES
+-------------------------------------------------- */
+        /* Padding below the footer and lighter body text */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-style: normal;
+            font-family: 'Source Sans Pro', Arial;
+        }
+        
+        body {
+            overflow-x: hidden;
+			background-color:#333;
+        }
+        
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.685);
+        }
+        
+        .navbar-brand {
+            height: 64px;
+            width: 208px;
+        }
+        
+        .navbar-nav {
+            padding-left: 2rem;
+        }
+        
+        .navbar-nav .nav-item {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .navbar-nav .nav-link {
+            position: relative;
+            text-align: center;
+            line-height: 40px;
+            letter-spacing: 1.12px;
+            color: rgba(255, 255, 255, 1);
+            font-size: 11px;
+            font-weight: 700;
+            font-style: normal;
+            font-family: 'Source Sans Pro', Arial;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: rgba(0, 183, 255, 0.726);
+        }
+        
+        .navbar-nav .active {
+            color: rgba(0, 183, 255, 0.726);
+        }
+        
+        .navbar-nav .active .underline-effect3 {
+            position: absolute;
+            width: 100%;
+            background-color: rgba(0, 183, 255, 0.726);
+            height: 2px;
+            bottom: 8px;
+            left: 0%;
+        }
+        
+        .navbar-nav .active .underline-effect2 {
+            position: absolute;
+            width: 100%;
+            background-color: rgba(0, 183, 255, 0.726);
+            height: 2px;
+            bottom: 8px;
+            left: 0%;
+        }
+        
+        .navbar-nav .active .underline-effect {
+            position: absolute;
+            width: 100%;
+            background-color: rgba(0, 183, 255, 0.726);
+            height: 2px;
+            bottom: 8px;
+            left: 0%;
+        }
+        
+        .navbar-nav .nav-link:hover .underline-effect3 {
+            position: absolute;
+            width: 100%;
+            background-color: rgba(0, 183, 255, 0.726);
+            height: 2px;
+            bottom: 8px;
+            left: 0%;
+            animation: underline-effect3 1s;
+        }
+        
+        .navbar-nav .nav-link:hover .underline-effect2 {
+            position: absolute;
+            width: 100%;
+            background-color: rgba(0, 183, 255, 0.726);
+            height: 2px;
+            bottom: 8px;
+            left: 0%;
+            animation: underline-effect2 1s;
+        }
+        
+        .navbar-nav .nav-link:hover .underline-effect {
+            position: absolute;
+            width: 100%;
+            background-color: rgba(0, 183, 255, 0.726);
+            height: 2px;
+            bottom: 8px;
+            left: 0%;
+            animation: underline-effect 1s;
+        }
+        
+        @keyframes underline-effect3 {
+            0% {
+                width: 0px;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        
+        @keyframes underline-effect2 {
+            0% {
+                width: 0px;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        
+        @keyframes underline-effect {
+            0% {
+                width: 0px;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        
+        .navbar .signup-btn {
+            position: relative;
+            width: 254px;
+            height: 64px;
+            cursor: pointer;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        
+        .navbar .signup-btn .btnoutline {
+            opacity: 0.3;
+            border: 1px solid rgba(0, 184, 255, 1);
+            border-radius: 32px;
+            width: 100%;
+            height: 64px;
+        }
+        
+        .navbar .signup-btn .btninline {
+            position: absolute;
+            top: 9px;
+            left: 9px;
+            border: 2px solid rgba(0, 184, 255, 1);
+            border-radius: 24px;
+            width: 92%;
+            height: 46px;
+        }
+        
+        .navbar .signup-btn:hover .btninline {
+            transition: 1s;
+            box-shadow: 0px 0px 20px 0px rgba(0, 183, 255, 0.726);
+        }
+        
+        .navbar .signup-btn .btn-text {
+            position: absolute;
+            top: 22px;
+            left: 15px;
+            text-align: center;
+            color: rgba(255, 255, 255, 1);
+            font-size: 16px;
+            font-weight: 700;
+            font-style: normal;
+            font-family: 'Source Sans Pro', Arial;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 100%;
+            height: 22px;
+        }
+        
+        .navbar .signup-btn .btn-icon {
+            position: absolute;
+            top: 22px;
+            left: 40px;
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+        
+        .navbar .signup-btn .btn-icon .icon {
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+        }
+        
+        .navbar .login-btn {
+            position: relative;
+            display: block;
+            width: 64px;
+            height: 64px;
+            cursor: pointer;
+        }
+        
+        .navbar .login-btn .btnoutline {
+            opacity: 0.3;
+            border: 1px solid rgba(0, 184, 255, 1);
+            border-radius: 32px;
+            width: 64px;
+            height: 64px;
+        }
+        
+        .navbar .login-btn .btninline {
+            position: absolute;
+            border: 2px solid rgba(0, 184, 255, 1);
+            border-radius: 24px;
+            width: 46px;
+            height: 46px;
+            left: 9px;
+            top: 9px;
+        }
+        
+        .navbar .login-btn:hover .btninline {
+            transition: 1s;
+            box-shadow: 0px 0px 20px 0px rgba(0, 183, 255, 0.726);
+        }
+        
+        .navbar .login-btn .btn-icon {
+            display: block;
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 22px;
+            top: 22px;
+        }
+        
+        .navbar .login-btn .btn-icon .icon {
+            color: rgba(255, 255, 255, 1);
+            font-size: 20px;
+        }
+        /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+        /* Carousel base class */
+        
+        .carousel {
+            margin-bottom: 4rem;
+            height: 100vh;
+        }
+        /* Since positioning the image, we need to help out the caption */
+        
+        .carousel-inner {
+            height: 100%;
+        }
+        
+        .carousel-caption {
+            bottom: 15%;
+            z-index: 10;
+            left: 5%;
+        }
+        
+        .carousel-caption .content {
+            margin-top: 25px;
+        }
+        
+        .carousel-caption p {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        
+        .carousel-caption p .icon {
+            margin-right: 10px;
+            color: #06AED5;
+        }
+        /* Declare heights because of positioning of img element */
+        
+        .carousel-item {
+            background-color: black;
+            height: 100%;
+            position: relative;
+            -webkit-transition: 1s ease-in-out left;
+            -moz-transition: 1s ease-in-out left;
+            -o-transition: 1s ease-in-out left;
+            transition: 1s left;
+        }
+        
+        .carousel-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            z-index: 99;
+            opacity: .8;
+        }
+        
+        .active .carousel-overlay {
+            transition: 1s;
+            z-index: 0;
+            animation: carousel 1s;
+        }
+        
+        @keyframes carousel {
+            0% {
+                opacity: .8;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        .carousel-item>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 32rem;
+        }
+        
+        .carousel-inner .img-overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+        }
+        
+        .carousel-indicators [data-bs-target] {
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+        }
+        /* .carousel .carousel-button {
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    left: 5%;
+    z-index: 2;
+} */
+        
+        .carousel .carousel-button {
+            margin-top: 35px;
+        }
+        
+        .carousel .carousel-button .signup-btn {
+            border-radius: 25px;
+            background-color: rgba(0, 184, 255, 1);
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 8px 15px;
+        }
+        
+        .carousel .carousel-button .signup-btn:hover {
+            transition: 1s;
+            box-shadow: 0px 0px 20px 0px rgba(0, 183, 255, 0.726);
+        }
+        
+        .carousel .carousel-button .signin-btn {
+            color: white;
+            border: 1px solid rgba(0, 184, 255, 1);
+            border-radius: 25px;
+            padding: 8px 15px;
+            margin-left: 10px;
+        }
+        
+        .carousel .carousel-button .signin-btn:hover {
+            transition: 1s;
+            box-shadow: 0px 0px 20px 0px rgba(0, 183, 255, 0.726);
+        }
+        
+        .slider-header {
+            text-transform: uppercase;
+            color: #06AED5;
+        }
+        
+        .slider-header-second {
+            font-size: 20px;
+            color: white;
+        }
+        
+        .slider-header-last {
+            color: white;
+        }
+        /* MARKETING CONTENT
+  -------------------------------------------------- */
+        /* Center align the text within the three columns below the carousel */
+        
+        .marketing {
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        
+        .marketing .service-section {
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+        
+        .marketing .service-section .service-main-header {
+            text-align: center;
+            color: rgba(5, 146, 200, 1);
+            margin-bottom: 10px;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        
+        .marketing .service-section .service-main-pera {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            margin-bottom: 50px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .marketing .col-lg-4 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        /* rtl:begin:ignore */
+        
+        .marketing .service {
+            position: relative;
+            box-shadow: 0px 0px 20px 0px rgba(246, 246, 246, 0.767);
+            height: 280px;
+            padding: 30px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .marketing .service .service-header {
+            font-weight: 700;
+            font-size: 24px;
+        }
+        
+        .marketing .service .service-content {
+            font-weight: 500;
+            font-size: 15px;
+        }
+        
+        .marketing .service .icon {
+            background-color: #06AED5;
+            width: 60px;
+            height: 60px;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, 0.897);
+            font-size: 40px;
+        }
+        
+        .marketing .service .icon-overlay {
+            position: absolute;
+            background-color: #06afd54f;
+            width: 60px;
+            height: 60px;
+            top: 20px;
+            left: 38%;
+            z-index: -9;
+            border-radius: 5px;
+        }
+        
+        .marketing .service .service-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 183, 255, 0.945);
+            z-index: -999;
+            display: none;
+            border-radius: 10px;
+        }
+        
+        .marketing .service:hover .service-overlay {
+            transition: 1s;
+            animation: service-anime 1s;
+            display: block;
+        }
+        
+        .marketing .service:hover {
+            transition: 1s;
+            color: rgb(255, 255, 255);
+        }
+        
+        .marketing .service:hover .icon-overlay {
+            transition: 1s;
+            box-shadow: 0px 0px 20px 0px rgba(0, 183, 255, 0.726);
+            background-color: #ffffffe0;
+        }
+        
+        @keyframes service-anime {
+            0% {
+                left: 100%;
+                width: 5%;
+            }
+            100% {
+                left: 0;
+            }
+        }
+        /* Thin out the marketing headings */
+        
+        .featurette {
+            align-items: center;
+            background: url('./img/bgFeatures.png'), rgba(0, 0, 0, 0.4);
+            color: rgba(255, 255, 255, 0.61);
+            background-blend-mode: overlay;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .featurette .featurette-heading {
+            font-weight: 400;
+            line-height: 1;
+            /* rtl:remove */
+            letter-spacing: -.05rem;
+            font-size: 1.5rem;
+        }
+        
+        .featurette .featurette-img-left {
+            padding: 0px;
+            height: 340px;
+        }
+        
+        .featurette .featurette-img-right {
+            padding: 0px;
+            height: 340px;
+        }
+        
+        .featurette .featurette-content {
+            text-align: justify;
+            padding: 0 30px;
+        }
+        
+        .featurette .featurette-content .lead {
+            font-size: 1rem;
+        }
+        /* calltoaction */
+        
+        .calltoaction {
+            height: 280px;
+            background: url('./img/bgFeatures.png'), rgba(0, 0, 0, 0.424);
+            margin-top: 50px;
+            padding: 0px 80px;
+            background-blend-mode: overlay;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding-bottom: 40px;
+        }
+        
+        .calltoaction .content {
+            position: relative;
+            margin-top: 80px;
+            width: 100%;
+            background-color: blanchedalmond;
+            text-align: center;
+            border-radius: 5%;
+            height: 140px;
+			margin-left: 40px;
+			margin-right: 72px;
+        }
+        
+        .calltoaction .content .icon {
+            position: absolute;
+            top: -35px;
+            left: 38%;
+            height: 60px;
+            width: 60px;
+            padding: 10px;
+            background-color: rgba(38, 90, 110, 1);
+            border-radius: 100%;
+            color: #fff;
+            font-size: 30px;
+        }
+        
+        .calltoaction .content .main-content {
+            padding: 15px;
+        }
+        
+        .calltoaction .content .main-content h2 {
+            color: rgba(38, 90, 110, 1);
+            margin-top: 35px;
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+        
+        .calltoaction .content .main-content p {
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .calltoaction .content:hover .icon {
+            transition: 1s;
+            box-shadow: 0px 0px 20px 0px rgba(0, 183, 255, 0.726);
+            color: rgba(0, 183, 255, 0.945);
+        }
+        /* login popup section */
+        
+        .login-popup {
+            display: none;
+            position: fixed;
+            width: 304px;
+            height: 384px;
+            right: 4%;
+            top: 10%;
+            z-index: 9999;
+        }
+        
+        .login-popup .login-section {
+            width: 304px;
+            height: 384px;
+            background: rgba(5, 146, 200, 1);
+            border-radius: 30px;
+        }
+        
+        .login-popup .login-section .email-section {
+            display: block;
+            position: absolute;
+            width: 240px;
+            height: 80px;
+            left: 32px;
+            top: 48px;
+        }
+        
+        .login-popup .login-section .input-box {
+            position: absolute;
+            border: 2px solid rgba(255, 255, 255, 0.39);
+            border-radius: 25px;
+            width: 100%;
+            height: 52px;
+            left: 0px;
+            top: 32px;
+            padding-left: 50px;
+            background-color: transparent;
+            outline: none;
+            font-size: 16px;
+            color: #fff;
+        }
+        
+        .login-popup .login-section .form-label {
+            position: absolute;
+            box-sizing: content-box;
+            opacity: 1;
+            background-color: rgba(255, 255, 255, 0);
+            text-align: left;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: rgba(255, 255, 255, 1);
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Source Sans Pro', Arial;
+            width: 160px;
+            height: 22px;
+            left: 20px;
+            top: -1px;
+        }
+        
+        .login-popup .login-section .form-dev {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.349);
+            width: 1px;
+            height: 26px;
+            left: 48px;
+            top: 44px;
+        }
+        
+        .login-popup .login-section .icon {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 24px;
+            height: 24px;
+            left: 12px;
+            top: 44px;
+        }
+        
+        .login-popup .login-section .icon .form-icon {
+            position: absolute;
+            fill: rgba(255, 255, 255, 1);
+            width: 20px;
+            left: 2px;
+        }
+        
+        .login-popup .login-section .email-section .icon .form-icon {
+            height: 14px;
+            top: 7px;
+        }
+        
+        .login-popup .login-section .password-section .icon .form-icon {
+            height: 20px;
+            top: 3px;
+        }
+        
+        .login-popup .login-section .password-section {
+            display: block;
+            position: absolute;
+            width: 240px;
+            height: 80px;
+            left: 32px;
+            top: 140px;
+        }
+        
+        .login-popup .login-section .button-section {
+            display: block;
+            position: absolute;
+            width: 240px;
+            height: 48px;
+            left: 32px;
+            top: 252px;
+        }
+        
+        .login-popup .login-section .button-section .form-button {
+            opacity: 1;
+            cursor: pointer;
+            background-color: rgba(0, 184, 255, 1);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 24px;
+            box-shadow: none;
+            width: 240px;
+            height: 48px;
+            padding-left: 80px;
+            outline: none;
+        }
+        
+        .login-popup .login-section .button-section .icon {
+            display: block;
+            position: absolute;
+            width: 24px;
+            height: 16px;
+            left: 170px;
+            top: 16px;
+        }
+        
+        .login-popup .login-section .button-section .icon .form-icon {
+            position: absolute;
+            fill: rgba(255, 255, 255, 1);
+            box-shadow: none;
+            width: 14px;
+            height: 10px;
+            left: 9px;
+            top: 3.02px;
+        }
+        
+        .login-popup .login-section .iconClose {
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+            left: 256px;
+            top: 32px;
+        }
+        
+        .login-popup .login-section .iconClose .union {
+            position: absolute;
+            opacity: 0.6;
+            fill: rgb(255, 255, 255);
+            box-shadow: none;
+            width: 12px;
+            height: 12px;
+            left: 2px;
+            top: 2px;
+        }
+        
+        .login-popup .login-section .forget-section {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 124px;
+            height: 18px;
+            left: 90px;
+            top: 332px;
+        }
+        
+        .login-popup .login-section .forget-section .forget-link {
+            position: absolute;
+            opacity: 0.6;
+            text-align: center;
+            line-height: 56px;
+            letter-spacing: 0px;
+            color: rgba(255, 255, 255, 1);
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Source Sans Pro', Arial;
+            text-decoration: none;
+            white-space: pre;
+            width: 124px;
+            height: 20px;
+            left: 0px;
+            top: -18px;
+        }
+        /* login Popup Animation */
+        
+        .loginpop-anime {
+            animation: loginpop-anime 1s;
+        }
+        
+        @keyframes loginpop-anime {
+            0% {
+                top: -10%;
+            }
+            100% {
+                top: 10%;
+            }
+        }
+        /* Signup popup Section */
+        
+        .signup-popup {
+            display: none;
+            position: fixed;
+            background-color: transparent;
+            width: 944px;
+            height: 100vh;
+            right: -10px;
+            top: 0px;
+            z-index: 9999;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        
+        .signup-popup::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+        .signup-popup .signup-section {
+            display: block;
+            position: absolute;
+            opacity: 0.98;
+            background-color: rgba(7, 16, 38, 1);
+            width: 944px;
+            height: 120vh;
+            left: 0px;
+            top: 0px;
+        }
+        
+        .signup-popup .signup-section .CloseSection {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 64px;
+            height: 64px;
+            left: 576px;
+            top: 32px;
+            cursor: pointer;
+        }
+        
+        .signup-popup .signup-section .CloseSection .close-outline {
+            position: absolute;
+            box-sizing: border-box;
+            opacity: 0.3;
+            background-color: transparent;
+            border: 1px solid rgba(0, 184, 255, 1);
+            border-radius: 32px;
+            width: 64px;
+            height: 64px;
+            left: 0px;
+            top: 0px;
+        }
+        
+        .signup-popup .signup-section .CloseSection .close-inline {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0);
+            border: 2px solid rgba(0, 184, 255, 1);
+            border-radius: 24px;
+            width: 46px;
+            height: 46px;
+            left: 9px;
+            top: 9px;
+        }
+        
+        .signup-popup .signup-section .CloseSection:hover .close-inline {
+            transition: 1s;
+            box-shadow: 0px 0px 20px 0px rgba(0, 183, 255, 0.726);
+        }
+        
+        .signup-popup .signup-section .CloseSection .union2 {
+            position: absolute;
+            fill: rgba(255, 255, 255, 1);
+            width: 12px;
+            height: 12px;
+            left: 27px;
+            top: 26px;
+        }
+        
+        .signup-popup .signup-section .form-section {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 528px;
+            height: 812px;
+            left: 112px;
+            top: 128px;
+        }
+        
+        .signup-popup .signup-section .form-section .form-box {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 206px;
+            height: 48px;
+            left: 0px;
+            top: 764px;
+        }
+        
+        .signup-popup .signup-section .form-section .form-box .signupbtn {
+            background-color: rgba(0, 184, 255, 1);
+            border: none;
+            border-radius: 24px;
+            width: 216px;
+            height: 48px;
+            font-size: 14px;
+            font-weight: 700;
+            padding-left: 24px;
+            font-style: normal;
+            font-family: 'Source Sans Pro', Arial;
+            line-height: 40px;
+            letter-spacing: 0.84px;
+            color: rgba(255, 255, 255, 1);
+            outline: none;
+            cursor: pointer;
+        }
+        
+        .signup-popup .signup-section .form-section .form-box .iconArrow {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 24px;
+            height: 16px;
+            left: 180px;
+            top: 16px;
+        }
+        
+        .signup-popup .signup-section .form-section .form-box .iconArrow .btnicon {
+            position: absolute;
+            fill: rgba(255, 255, 255, 1);
+            width: 14px;
+            height: 10px;
+            left: 9px;
+            top: 3.02px;
+        }
+        
+        .signup-popup .signup-section .form-section .header-text {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0);
+            text-align: left;
+            line-height: 40px;
+            letter-spacing: 0px;
+            color: rgba(255, 255, 255, 1);
+            font-size: 32px;
+            font-weight: 300;
+            font-style: normal;
+            font-family: oswald_light, Arial;
+            width: 528px;
+            height: 48px;
+            left: 0px;
+            top: 3.50px;
+        }
+        
+        .signup-popup .signup-section .form-section .firstN-section {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 248px;
+            height: 80px;
+            left: 0px;
+            top: 96px;
+        }
+        
+        .signup-popup .signup-section .form-section .formInput {
+            position: absolute;
+            box-sizing: border-box;
+            background-color: transparent;
+            border: 2px solid rgba(0, 183, 255, 0.445);
+            border-radius: 24px;
+            width: 100%;
+            height: 48px;
+            left: 0px;
+            top: 32px;
+            padding-left: 28px;
+            padding-right: 10px;
+            color: rgba(255, 255, 255, 1);
+            outline: none;
+        }
+        
+        .signup-popup .signup-section .form-section .input-label {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0);
+            text-align: left;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: rgba(193, 215, 223, 1);
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Source Sans Pro', Arial;
+            white-space: pre;
+            width: 109px;
+            height: 22px;
+            left: 20px;
+            top: -1px;
+        }
+        
+        .signup-popup .signup-section .form-section .input-dr {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.452);
+            width: 1px;
+            height: 20px;
+            left: 24px;
+            top: 46px;
+        }
+        
+        .signup-popup .signup-section .form-section .lastN-section {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 248px;
+            height: 80px;
+            left: 280px;
+            top: 96px;
+        }
+        
+        .signup-popup .signup-section .form-section .email-section {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 528px;
+            height: 80px;
+            left: 0px;
+            top: 196px;
+        }
+        
+        .signup-popup .signup-section .form-section .password-section {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 248px;
+            height: 80px;
+            left: 0px;
+            top: 296px;
+        }
+        
+        .signup-popup .signup-section .form-section .cpassword-section {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 248px;
+            height: 80px;
+            left: 280px;
+            top: 296px;
+        }
+        
+        .signup-popup .signup-section .form-section .address-section {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 528px;
+            height: 80px;
+            left: 0px;
+            top: 396px;
+        }
+        
+        .signup-popup .signup-section .form-section .postal-section {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 248px;
+            height: 80px;
+            left: 0px;
+            top: 496px;
+        }
+        
+        .signup-popup .signup-section .form-section .state-section {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 248px;
+            height: 80px;
+            left: 280px;
+            top: 496px;
+        }
+        
+        .signup-popup .signup-section .form-section .tel-section {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 248px;
+            height: 80px;
+            left: 280px;
+            top: 596px;
+        }
+        
+        .signup-popup .signup-section .form-section .checkbox {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 24px;
+            height: 24px;
+            left: 0px;
+            top: 708px;
+        }
+        
+        .signup-popup .signup-section .form-section .checkbox .inputcheck {
+            position: absolute;
+            box-sizing: border-box;
+            border: 2px solid rgba(0, 184, 255, 1);
+            border-radius: 4px;
+            width: 18px;
+            height: 18px;
+            left: 0px;
+            top: 4px;
+        }
+        
+        .signup-popup .signup-section .form-section .terms-box {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0);
+            text-align: left;
+            line-height: 20px;
+            letter-spacing: 0px;
+            color: rgba(255, 255, 255, 1);
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Source Sans Pro', Arial;
+            width: 400px;
+            height: 20px;
+            left: 35px;
+            top: 710px;
+        }
+        
+        .signup-popup .signup-section .form-section .terms-box .terms-box-0 {
+            color: rgba(255, 255, 255, 1);
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            font-family: 'Source Sans Pro', Arial;
+            letter-spacing: 0;
+        }
+        
+        .signup-popup .signup-section .form-section .terms-box .terms-box-14 {
+            color: rgba(0, 184, 255, 1);
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            font-family: 'Source Sans Pro', Arial;
+            letter-spacing: 0;
+        }
+        
+        .signup-popup .signup-section .form-section .terms-box .terms-box-48 {
+            color: rgba(255, 255, 255, 1);
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            font-family: 'Source Sans Pro', Arial;
+            letter-spacing: 0;
+        }
+        
+        .signup-popup .signup-section .form-section .Select-section {
+            display: block;
+            position: absolute;
+            width: 248px;
+            height: 82px;
+            left: 0px;
+            top: 596px;
+        }
+        
+        .signup-popup .signup-section .form-section .Select-section .select-box {
+            position: absolute;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: rgb(7, 16, 38);
+            border: 2px solid rgba(0, 183, 255, 0.466);
+            color: rgba(255, 255, 255, 1);
+            border-radius: 24px;
+            width: 248px;
+            height: 48px;
+            left: 0px;
+            top: 32px;
+            outline: none;
+            padding: 0px 10px;
+            box-shadow: none;
+        }
+        
+        .signup-popup .signup-section .form-section .Select-section::before {
+            content: "\02C5";
+            position: absolute;
+            right: 0px;
+            top: 36px;
+            width: 20%;
+            height: 100%;
+            text-align: center;
+            font-size: 18px;
+            line-height: 45px;
+            color: rgba(255, 255, 255, 0.924);
+            z-index: 1;
+        }
+        /* login Popup Animation */
+        
+        .signuppop-anime {
+            animation: signuppop-anime 1s;
+        }
+        
+        @keyframes signuppop-anime {
+            0% {
+                right: -1000px;
+            }
+            100% {
+                right: 0px;
+            }
+        }
+        /* footer */
+        
+        .footer {
+            padding-top: 50px;
+            background: url("./img/bgFooter.png");
+            background-position: top;
+            border-top: 1px solid rgb(47, 47, 47);
+        }
+        
+        .footer .footer-logo {
+            width: 145px;
+            height: 65px;
+        }
+        
+        .footer .footer-section-1 .content p {
+            font-size: 17px;
+            color: rgba(38, 90, 110, 1);
+        }
+        
+        .footer .footer-nav {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .footer .footer-nav li {
+            color: rgba(38, 90, 110, 1);
+            padding: 8px 0;
+            font-size: 14px;
+        }
+        
+        .footer-section-4 {
+            color: rgba(38, 90, 110, 1);
+        }
+        
+        .footer-section-4 .footer-content {
+            font-size: 13px;
+        }
+        
+        .footer .footer-start {
+            padding-bottom: 30px;
+        }
+        
+        .footer .footer-end {
+            border-top: 1px solid rgb(47, 47, 47);
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        
+        .footer .copyright {
+            color: rgba(38, 90, 110, 1);
+        }
+        
+        .footer .social {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+        }
+        
+        .footer .social .icon {
+            width: 32px;
+            margin-left: 10px;
+        }
+        
+        .subscribe {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: rgba(38, 90, 110, 1);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 50%;
+        }
+        
+        .subscribe:hover .icon {
+            color: rgba(255, 255, 255, 0.63);
+        }
+        
+        .subscribe:hover {
+            transition: 1s;
+            box-shadow: 0px 0px 20px 0px rgba(0, 183, 255, 0.726);
+        }
+        
+        .subscribe .icon {
+            width: 35px;
+            height: 35px;
+        }
+        
+        .section-srcoll {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .section-srcoll:hover .srcoll-outside {
+            opacity: 1;
+        }
+        
+        .section-srcoll .srcoll-outside {
+            opacity: 0.1;
+            fill: rgba(0, 184, 255, 1);
+            width: 32px;
+            height: 24px;
+            left: 0px;
+            top: 0px;
+        }
+        
+        .section-srcoll .srcoll-inside {
+            transform: rotate(180deg);
+            position: absolute;
+            fill: rgba(7, 16, 38, 1);
+            width: 8px;
+            height: 5px;
+            top: 12px;
+        }
+        
+        .section-srcoll:hover .srcoll-outside {
+            opacity: 1;
+        }
+        /* RESPONSIVE CSS
+  -------------------------------------------------- */
+        
+        @media (min-width: 1400px) {
+            .navbar-nav {
+                padding-left: 5rem;
+            }
+            .navbar-nav .nav-link {
+                font-size: 14px;
+            }
+            .carousel-caption {
+                bottom: 20%;
+            }
+            .slider-header {
+                font-size: 3.5rem;
+            }
+        }
+        
+        @media (min-width: 1600px) {
+            .slider-header {
+                font-size: 5rem;
+            }
+            .carousel-caption {
+                left: 15%;
+            }
+            .carousel-caption .content {
+                font-size: 2rem;
+            }
+            .carousel .carousel-button .signup-btn {
+                font-size: 24px;
+            }
+            .carousel .carousel-button .signin-btn {
+                font-size: 24px;
+            }
+        }
+        
+        @media (min-width: 1366px) {
+            .slider-header {
+                font-size: 3.2rem;
+            }
+            .carousel-caption .content {
+                font-size: 1.3rem;
+            }
+            .carousel .carousel-button .signup-btn {
+                font-size: 18px;
+            }
+            .carousel .carousel-button .signin-btn {
+                font-size: 18px;
+            }
+        }
+        
+        @media (max-width: 1600px) {
+            .signup-popup .signup-section {
+                width: 800px;
+                left: 140px;
+                height: 170vh;
+            }
+        }
+        
+        @media (max-width: 1366px) {
+            .carousel-caption {
+                left: 10%;
+            }
+        }
+        
+        @media (max-width: 1300px) {
+            .signup-popup .signup-section {
+                height: 160vh;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .carousel-caption {
+                left: 10%;
+            }
+            .hompage .headerDefault .signup-btn {
+                left: 350px;
+                top: 570px;
+            }
+            .hompage .headerDefault .login-btn {
+                left: 610px;
+                top: 570px;
+            }
+            .carousel .carousel-button {
+                display: none;
+            }
+            .carousel-caption {
+                bottom: 30%;
+            }
+            .fixed-top {
+                position: absolute;
+            }
+            .navbar-collapse {
+                flex-grow: 0;
+            }
+            .navbar .signup-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 34%;
+            }
+            .navbar .login-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 56%;
+            }
+            .signup-popup .signup-section {
+                width: 800px;
+                left: 140px;
+                height: 160vh;
+            }
+        }
+        
+        @media (max-width: 1136px) {
+            .navbar .signup-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 32%;
+            }
+            .navbar .login-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 56%;
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .carousel-caption {
+                left: 5%;
+            }
+            .hompage .headerDefault .signup-btn {
+                left: 350px;
+                top: 570px;
+            }
+            .hompage .headerDefault .login-btn {
+                left: 610px;
+                top: 570px;
+            }
+            .carousel .carousel-button {
+                display: none;
+            }
+            .carousel-caption {
+                bottom: 30%;
+            }
+            .fixed-top {
+                position: absolute;
+            }
+            .navbar-collapse {
+                flex-grow: 0;
+            }
+            .navbar .signup-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 30%;
+            }
+            .navbar .login-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 56%;
+            }
+            .marketing .service .icon-overlay {
+                left: 36%;
+            }
+        }
+        
+        @media (max-width: 950px) {
+            .carousel-caption {
+                left: 10%;
+            }
+            .navbar .signup-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 28%;
+            }
+            .navbar .login-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 56%;
+            }
+            .marketing .service .icon-overlay {
+                left: 44%;
+            }
+        }
+        
+        @media (max-width: 850px) {
+            .navbar .signup-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 25%;
+            }
+            .navbar .login-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 56%;
+            }
+            .marketing .service .icon-overlay {
+                left: 44%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .carousel-caption {
+                bottom: 30%;
+                left: 5%;
+            }
+            .navbar-expand-md .navbar-nav .nav-link {
+                font-size: 10px;
+            }
+            .navbar .signup-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 25%;
+            }
+            .navbar .login-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 60%;
+            }
+            .signup-popup .signup-section {
+                height: 160vh;
+            }
+            .signup-popup .signup-section {
+                width: 800px;
+                left: 140px;
+            }
+            .marketing {
+                margin-bottom: 70px;
+            }
+            .marketing .service .icon-overlay {
+                left: 44%;
+            }
+            .marketing .service-section {
+                margin-bottom: 20px;
+            }
+            .featurette .featurette-heading {
+                padding-top: 20px;
+                text-align: left;
+                width: 100%;
+                font-size: 28px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(75, 75, 75, 0.609);
+            }
+            .calltoaction {
+                height: auto;
+            }
+            .calltoaction .content .icon {
+                left: 45%;
+            }
+            .footer .footer-section-1 {
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(75, 75, 75, 0.609);
+            }
+            .footer .footer-nav {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid rgba(75, 75, 75, 0.609);
+            }
+            .footer .social {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .carousel-caption {
+                bottom: 30%;
+            }
+            .navbar-expand-md .navbar-nav .nav-link {
+                font-size: 10px;
+            }
+            .navbar-collapse {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(7, 16, 38, 1);
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: 9999999;
+            }
+            .navbar-nav {
+                padding-left: 0px;
+                padding: 50px;
+                margin-top: 150px;
+            }
+            .navbar-toggler .mobile-toggler {
+                fill: rgba(255, 255, 255, 1);
+                box-shadow: none;
+                width: 20px;
+                height: 16px;
+                outline: none;
+            }
+            .navbar-toggler .mobile-close {
+                fill: rgba(255, 255, 255, 1);
+                box-shadow: none;
+                width: 20px;
+                height: 16px;
+                outline: none;
+                top: 35px;
+                right: 50px;
+                position: absolute;
+            }
+            .navbar .signup-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 25%;
+            }
+            .navbar .login-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 60%;
+            }
+            .signup-popup .signup-section {
+                height: 120vh;
+            }
+            .signup-popup .signup-section {
+                width: 800px;
+                left: 140px;
+            }
+            .marketing {
+                margin-bottom: 70px;
+            }
+            .marketing .service .icon-overlay {
+                left: 44%;
+            }
+            .marketing .service-section {
+                margin-bottom: 20px;
+            }
+            .featurette .featurette-heading {
+                padding-top: 20px;
+                text-align: left;
+                width: 100%;
+                font-size: 28px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(75, 75, 75, 0.609);
+            }
+            .calltoaction {
+                height: auto;
+            }
+            .calltoaction .content .icon {
+                left: 45%;
+            }
+            .footer .footer-section-1 {
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(75, 75, 75, 0.609);
+            }
+            .footer .footer-nav {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid rgba(75, 75, 75, 0.609);
+            }
+            .footer .social {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 700px) {
+            .navbar .signup-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 22%;
+            }
+            .navbar .login-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 65%;
+            }
+            .signup-popup .signup-section {
+                width: 800px;
+                left: 140px;
+            }
+            .marketing .service .icon-overlay {
+                left: 42%;
+            }
+            .signup-popup {
+                width: 780px;
+                height: 150vh;
+            }
+            .signup-popup .signup-section {
+                width: 780px;
+                left: 140px;
+                height: 240vh;
+            }
+            .signup-popup .signup-section .form-section {
+                width: 490px;
+                left: 72px;
+            }
+            .signup-popup .signup-section .CloseSection {
+                left: 510px;
+            }
+            .signup-popup .signup-section .form-section .header-text {
+                width: 490px;
+                font-size: 36px;
+            }
+            .signup-popup .signup-section .form-section .firstN-section {
+                width: 490px;
+                left: 0px;
+            }
+            .signup-popup .signup-section .form-section .lastN-section {
+                width: 490px;
+                left: 0px;
+                top: 196px;
+            }
+            .signup-popup .signup-section .form-section .email-section {
+                width: 490px;
+                left: 0px;
+                top: 296px;
+            }
+            .signup-popup .signup-section .form-section .password-section {
+                width: 490px;
+                left: 0px;
+                top: 396px;
+            }
+            .signup-popup .signup-section .form-section .cpassword-section {
+                width: 490px;
+                left: 0px;
+                top: 496px;
+            }
+            .signup-popup .signup-section .form-section .address-section {
+                width: 490px;
+                left: 0px;
+                top: 596px;
+            }
+            .signup-popup .signup-section .form-section .postal-section {
+                width: 490px;
+                left: 0px;
+                top: 696px;
+            }
+            .signup-popup .signup-section .form-section .state-section {
+                width: 490px;
+                left: 0px;
+                top: 796px;
+            }
+            .signup-popup .signup-section .form-section .tel-section {
+                width: 490px;
+                left: 0px;
+                top: 896px;
+            }
+            .signup-popup .signup-section .form-section .Select-section {
+                width: 490px;
+                left: 0px;
+                top: 996px;
+            }
+            .signup-popup .signup-section .form-section .Select-section .select-box {
+                width: 490px;
+            }
+            .signup-popup .signup-section .form-section .checkbox {
+                top: 1110px;
+            }
+            .signup-popup .signup-section .form-section .terms-box {
+                width: 490px;
+                top: 1112px;
+            }
+            .signup-popup .signup-section .form-section .form-box {
+                top: 1190px;
+            }
+        }
+        /* mobile media query */
+        
+        @media (max-width: 600px) {
+            .carousel-caption {
+                bottom: 30%;
+            }
+            .navbar-expand-md .navbar-nav .nav-link {
+                font-size: 14px;
+            }
+            .navbar .signup-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 20%;
+            }
+            .navbar .login-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 65%;
+            }
+            .navbar-collapse {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(7, 16, 38, 1);
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: 9999999;
+            }
+            .navbar-nav {
+                padding-left: 0px;
+                padding: 50px;
+                margin-top: 150px;
+            }
+            .navbar-toggler .mobile-toggler {
+                fill: rgba(255, 255, 255, 1);
+                box-shadow: none;
+                width: 20px;
+                height: 16px;
+                outline: none;
+            }
+            .navbar-toggler .mobile-close {
+                fill: rgba(255, 255, 255, 1);
+                box-shadow: none;
+                width: 20px;
+                height: 16px;
+                outline: none;
+                top: 35px;
+                right: 50px;
+                position: absolute;
+            }
+            .signup-popup .signup-section {
+                width: 800px;
+                left: 140px;
+            }
+            .marketing .service .icon-overlay {
+                left: 42%;
+            }
+            .signup-popup {
+                width: 615px;
+                height: 150vh;
+            }
+            .signup-popup .signup-section {
+                width: 615px;
+                height: 220vh;
+            }
+            .signup-popup .signup-section .form-section {
+                width: 490px;
+                left: 72px;
+            }
+            .signup-popup .signup-section .CloseSection {
+                left: 510px;
+            }
+            .signup-popup .signup-section .form-section .header-text {
+                width: 490px;
+                font-size: 36px;
+            }
+            .signup-popup .signup-section .form-section .firstN-section {
+                width: 490px;
+                left: 0px;
+            }
+            .signup-popup .signup-section .form-section .lastN-section {
+                width: 490px;
+                left: 0px;
+                top: 196px;
+            }
+            .signup-popup .signup-section .form-section .email-section {
+                width: 490px;
+                left: 0px;
+                top: 296px;
+            }
+            .signup-popup .signup-section .form-section .password-section {
+                width: 490px;
+                left: 0px;
+                top: 396px;
+            }
+            .signup-popup .signup-section .form-section .cpassword-section {
+                width: 490px;
+                left: 0px;
+                top: 496px;
+            }
+            .signup-popup .signup-section .form-section .address-section {
+                width: 490px;
+                left: 0px;
+                top: 596px;
+            }
+            .signup-popup .signup-section .form-section .postal-section {
+                width: 490px;
+                left: 0px;
+                top: 696px;
+            }
+            .signup-popup .signup-section .form-section .state-section {
+                width: 490px;
+                left: 0px;
+                top: 796px;
+            }
+            .signup-popup .signup-section .form-section .tel-section {
+                width: 490px;
+                left: 0px;
+                top: 896px;
+            }
+            .signup-popup .signup-section .form-section .Select-section {
+                width: 490px;
+                left: 0px;
+                top: 996px;
+            }
+            .signup-popup .signup-section .form-section .Select-section .select-box {
+                width: 490px;
+            }
+            .signup-popup .signup-section .form-section .checkbox {
+                top: 1110px;
+            }
+            .signup-popup .signup-section .form-section .terms-box {
+                width: 490px;
+                top: 1112px;
+            }
+            .signup-popup .signup-section .form-section .form-box {
+                top: 1190px;
+            }
+        }
+        
+        @media (max-width: 450px) {
+            .navbar .signup-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 8%;
+            }
+            .navbar .login-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 70%;
+            }
+            .marketing .service .icon-overlay {
+                left: 40%;
+            }
+            .signup-popup {
+                width: 450px;
+                height: 105vh;
+            }
+            .signup-popup .signup-section {
+                width: 450px;
+                height: 200vh;
+                left: 0;
+            }
+            .signup-popup .signup-section .form-section {
+                width: 430px;
+                left: 72px;
+            }
+            .signup-popup .signup-section .CloseSection {
+                left: 335px;
+            }
+            .signup-popup .signup-section .form-section .header-text {
+                width: 375px;
+                font-size: 28px;
+            }
+            .signup-popup .signup-section .form-section .firstN-section {
+                width: 330px;
+                left: 0px;
+            }
+            .signup-popup .signup-section .form-section .lastN-section {
+                width: 330px;
+                left: 0px;
+                top: 196px;
+            }
+            .signup-popup .signup-section .form-section .email-section {
+                width: 330px;
+                left: 0px;
+                top: 296px;
+            }
+            .signup-popup .signup-section .form-section .password-section {
+                width: 330px;
+                left: 0px;
+                top: 396px;
+            }
+            .signup-popup .signup-section .form-section .cpassword-section {
+                width: 330px;
+                left: 0px;
+                top: 496px;
+            }
+            .signup-popup .signup-section .form-section .address-section {
+                width: 330px;
+                left: 0px;
+                top: 596px;
+            }
+            .signup-popup .signup-section .form-section .postal-section {
+                width: 330px;
+                left: 0px;
+                top: 696px;
+            }
+            .signup-popup .signup-section .form-section .state-section {
+                width: 330px;
+                left: 0px;
+                top: 796px;
+            }
+            .signup-popup .signup-section .form-section .tel-section {
+                width: 330px;
+                left: 0px;
+                top: 896px;
+            }
+            .signup-popup .signup-section .form-section .Select-section {
+                width: 330px;
+                left: 0px;
+                top: 996px;
+            }
+            .signup-popup .signup-section .form-section .Select-section .select-box {
+                width: 330px;
+            }
+            .signup-popup .signup-section .form-section .checkbox {
+                top: 1110px;
+            }
+            .signup-popup .signup-section .form-section .terms-box {
+                width: 300px;
+                top: 1112px;
+            }
+            .signup-popup .signup-section .form-section .form-box {
+                top: 1190px;
+            }
+        }
+        
+        @media (max-width: 375px) {
+            .carousel-caption {
+                bottom: 30%;
+            }
+            .navbar .signup-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 3%;
+            }
+            .navbar .login-btn {
+                position: absolute;
+                bottom: -75vh;
+                left: 75%;
+            }
+            .marketing .service .icon-overlay {
+                left: 38%;
+            }
+            .calltoaction .content .icon {
+                left: 33%;
+            }
+            .signup-popup {
+                width: 430px;
+                height: 105vh;
+            }
+            .signup-popup .signup-section {
+                width: 430px;
+                height: 240vh;
+                left: 0;
+            }
+            .signup-popup .signup-section .form-section {
+                width: 430px;
+                left: 72px;
+            }
+            .signup-popup .signup-section .CloseSection {
+                left: 335px;
+            }
+            .signup-popup .signup-section .form-section .header-text {
+                width: 375px;
+                font-size: 28px;
+            }
+            .signup-popup .signup-section .form-section .firstN-section {
+                width: 330px;
+                left: 0px;
+            }
+            .signup-popup .signup-section .form-section .lastN-section {
+                width: 330px;
+                left: 0px;
+                top: 196px;
+            }
+            .signup-popup .signup-section .form-section .email-section {
+                width: 330px;
+                left: 0px;
+                top: 296px;
+            }
+            .signup-popup .signup-section .form-section .password-section {
+                width: 330px;
+                left: 0px;
+                top: 396px;
+            }
+            .signup-popup .signup-section .form-section .cpassword-section {
+                width: 330px;
+                left: 0px;
+                top: 496px;
+            }
+            .signup-popup .signup-section .form-section .address-section {
+                width: 330px;
+                left: 0px;
+                top: 596px;
+            }
+            .signup-popup .signup-section .form-section .postal-section {
+                width: 330px;
+                left: 0px;
+                top: 696px;
+            }
+            .signup-popup .signup-section .form-section .state-section {
+                width: 330px;
+                left: 0px;
+                top: 796px;
+            }
+            .signup-popup .signup-section .form-section .tel-section {
+                width: 330px;
+                left: 0px;
+                top: 896px;
+            }
+            .signup-popup .signup-section .form-section .Select-section {
+                width: 330px;
+                left: 0px;
+                top: 996px;
+            }
+            .signup-popup .signup-section .form-section .Select-section .select-box {
+                width: 330px;
+            }
+            .signup-popup .signup-section .form-section .checkbox {
+                top: 1110px;
+            }
+            .signup-popup .signup-section .form-section .terms-box {
+                width: 300px;
+                top: 1112px;
+            }
+            .signup-popup .signup-section .form-section .form-box {
+                top: 1190px;
+            }
+        }
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+    width: 310px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #333;
+    overflow: hidden;
+    margin: 30px;
+    box-shadow:0 20px 50px rgba(0, 0, 0, 0.2);
+}
+.container .card::before{
+    content: " ";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+.container .card .content{
+    padding: 30px;
+    text-align: center;
+}
+
+.container .card .content h{
+    position: absolute;
+    margin-top: 50px;
+    right: 120px;
+    font-size: 4em;
+    font-weight: 800;
+    color: #1779ff;
+    z-index: 1;
+    opacity: .01;
+    transition: 0.5s;
+}
+
+.container .card:hover .content h{
+    opacity: 1;
+    transform: translateY(-140px);
+}
+
+.container .card .content h3{
+    position: relative;
+    font-size: 1.5rem;
+    color: #fff;
+    z-index: 2;
+    opacity: .5;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.container .card .content p{
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    z-index: 2;
+    opacity: .5;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.container .card:hover .content h3, .container .card:hover .content p{
+    opacity: 1;
+}
+.container .card span{
+    transition: 0.5;
+}
+.container .card span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent,#1779ff );
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1
+{
+  0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+
+.container .card span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent,#1779ff );
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate2
+{
+  0%
+    {
+        transform: translateY(-100%);
+    }
+    100%
+    {
+        transform: translateY(100%);
+    }
+}
+.container .card span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent,#1779ff );
+    animation: animate3 2s linear infinite;
+}
+@keyframes animate3
+{
+  0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
+
+.container .card span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent,#1779ff );
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate4
+{
+  0%
+    {
+        transform: translateY(100%);
+    }
+    100%
+    {
+        transform: translateY(-100%);
+    }
+}
+
+
+.card .content .icon {
+    background-color: #06AED5;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.897);
+    font-size: 40px;
+}
+.comment h2{
+	color:#1779ff;
+	
+}
+	
+.comment h3{color:#fff}
+
+

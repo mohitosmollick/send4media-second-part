@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo-S4M-white@2x.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- FontAwesome Css v5.15.2 -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <title>Send4Media</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="assets/img/logo-S4M-white@2x.png" alt="Send4Media">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg preserveAspectRatio="none" viewBox="3763.000732421875 -9039 19.9990234375 15.9990234375" class="mobile-toggler">
+                        <path d="M 3764.001220703125 -9023.0009765625 C 3763.447509765625 -9023.0009765625 3763.000732421875 -9023.447265625 3763.000732421875 -9024.0009765625 C 3763.000732421875 -9024.552734375 3763.447509765625 -9024.9990234375 3764.001220703125 -9024.9990234375 L 3778 -9024.9990234375 C 3778.55126953125 -9024.9990234375 3779.000244140625 -9024.552734375 3779.000244140625 -9024.0009765625 C 3779.000244140625 -9023.447265625 3778.55126953125 -9023.0009765625 3778 -9023.0009765625 L 3764.001220703125 -9023.0009765625 Z M 3764.001220703125 -9029.9990234375 C 3763.447509765625 -9029.9990234375 3763.000732421875 -9030.4482421875 3763.000732421875 -9030.9990234375 C 3763.000732421875 -9031.552734375 3763.447509765625 -9032 3764.001220703125 -9032 L 3781.999267578125 -9032 C 3782.552734375 -9032 3782.999755859375 -9031.552734375 3782.999755859375 -9030.9990234375 C 3782.999755859375 -9030.4482421875 3782.552734375 -9029.9990234375 3781.999267578125 -9029.9990234375 L 3764.001220703125 -9029.9990234375 Z M 3764.001220703125 -9036.9990234375 C 3763.447509765625 -9036.9990234375 3763.000732421875 -9037.4462890625 3763.000732421875 -9038 C 3763.000732421875 -9038.5537109375 3763.447509765625 -9039 3764.001220703125 -9039 L 3781.999267578125 -9039 C 3782.552734375 -9039 3782.999755859375 -9038.5537109375 3782.999755859375 -9038 C 3782.999755859375 -9037.4462890625 3782.552734375 -9036.9990234375 3781.999267578125 -9036.9990234375 L 3764.001220703125 -9036.9990234375 Z"  />
+                    </svg>
+                
+            </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg preserveAspectRatio="none" viewBox="0.0002250075340270996 -0.0004500150680541992 11.8994140625 11.89990234375" class="mobile-close">
+                            <path d="M 10.19250011444092 11.60640048980713 L 5.949707508087158 7.363607406616211 L 1.707300066947937 11.60640048980713 C 1.316699981689453 11.9970006942749 0.6840000152587891 11.9970006942749 0.2934000194072723 11.60640048980713 C -0.09719999879598618 11.21580028533936 -0.09719999879598618 10.582200050354 0.2934000194072723 10.19159984588623 L 4.535550117492676 5.949450016021729 L 0.2925000190734863 1.706400036811829 C -0.09719999879598618 1.315800070762634 -0.09719999879598618 0.6831000447273254 0.2925000190734863 0.2925000190734863 C 0.6831000447273254 -0.09809999912977219 1.316699981689453 -0.09809999912977219 1.707300066947937 0.2925000190734863 L 5.949900150299072 4.535099983215332 L 10.19250011444092 0.2925000190734863 C 10.58310031890869 -0.09809999912977219 11.21580028533936 -0.09809999912977219 11.60640048980713 0.2925000190734863 C 11.9970006942749 0.6831000447273254 11.9970006942749 1.315800070762634 11.60640048980713 1.706400036811829 L 7.363993167877197 5.949193000793457 L 11.60640048980713 10.19159984588623 C 11.9970006942749 10.582200050354 11.9970006942749 11.21580028533936 11.60640048980713 11.60640048980713 C 11.41110038757324 11.80170059204102 11.15527534484863 11.8993501663208 10.89945030212402 11.8993501663208 C 10.64362525939941 11.8993501663208 10.3878002166748 11.80170059204102 10.19250011444092 11.60640048980713 Z"  />
+                        </svg>
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active item" aria-current="page">ACCUEIL
+                                <span class="underline-effect"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item2">Comment ça fonctionne?
+                                <span class="underline-effect2"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://pro.send4media.com/">Je suis un Producteur/Label
+                                <span class="underline-effect3"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="signup-btn signup-popbtn">
+                    <div class="btnoutline"></div>
+                    <div class="btninline"></div>
+                    <a href="#" class="btn-text">Ouvrir un compte</a>
+                    <div class="btn-icon">
+                        <i class="icon fas fa-microphone-alt"></i>
+                    </div>
+                </div>
+                <div class="login-btn">
+                    <div class="btnoutline"></div>
+                    <div class="btninline"></div>
+                    <div class="btn-icon">
+                        <i class="icon fas fa-lock"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-overlay"></div>
+                    <img class="bd-placeholder-img w-100 h-100" src="./assets/img/radio-bg.jpg" alt="">
+                    <div class="img-overlay"></div>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1 class="slider-header">Téléchargez <span class="slider-header-second">Des</span> <br><span class="slider-header-last">Nouveautés Musicales</span></h1>
+                            <div class="content">
+                                <p><i class="icon fas fa-check"></i>Entièrement Gratuit</p>
+                                <p><i class="icon fas fa-check"></i>Pas d'engagement</p>
+                                <p><i class="icon fas fa-check"></i>Pas d'obligations</p>
+                                <p><i class="icon fas fa-check"></i>Opérations Rémunérées</p>
+                                <p><i class="icon fas fa-check"></i>Support 24/7</p>
+                            </div>
+
+                            <div class="carousel-button">
+                                <button type="button" class="btn signup-btn">OUVRIR UN COMPTE <i class="btn-icon fas fa-arrow-right"></i></button>
+                                <button type="button" class="btn signin-btn">se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-overlay"></div>
+                    <img class="bd-placeholder-img w-100 h-100" src="./assets/img/radio-bg-2.jpg" alt="">
+                    <div class="img-overlay"></div>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1 class="slider-header">Gagnez des <span class="slider-header-second">€uros</span> <br><span class="slider-header-last">Opérations Rémunérées</span></h1>
+                            <div class="content">
+                                <p><i class="icon fas fa-check"></i>Service EXCLUSIVEMENT Réservé aux Radios et Webradios</p>
+                                <p><i class="icon fas fa-check"></i>Sans frais - 100% Gratuit</p>
+                                <p><i class="icon fas fa-check"></i>Aucune Obligation</p>
+                                <p><i class="icon fas fa-check"></i>Vous êtes libre de participer aux opérations</p>
+                                <p><i class="icon fas fa-check"></i>Retrait par Virement ou Paypal</p>
+                            </div>
+                            <div class="carousel-button">
+                                <button type="button" class="btn signup-btn">OUVRIR UN COMPTE <i class="btn-icon fas fa-arrow-right"></i></button>
+                                <button type="button" class="btn signin-btn">se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-overlay"></div>
+                    <img class="bd-placeholder-img w-100 h-100" src="./assets/img/radio-bg-3.jpg" alt="">
+                    <div class="img-overlay"></div>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1 class="slider-header">3H d'Emissions<span class="slider-header-second"></span> <br><span class="slider-header-last">animées Chaque Semaine</span></h1>
+                            <div class="content">
+                                <p><i class="icon fas fa-check"></i>Toutes les nouveautés Send4Média</p>
+                                <p><i class="icon fas fa-check"></i>Entièrement Gratuite</p>
+                                <p><i class="icon fas fa-check"></i>Aucune Obligation de diffusions</p>
+                                <p><i class="icon fas fa-check"></i>Téléchargement par FTP</p>
+                                <p><i class="icon fas fa-check"></i>Accès immédiat</p>
+                            </div>
+                            <div class="carousel-button">
+                                <button type="button" class="btn signup-btn">OUVRIR UN COMPTE <i class="btn-icon fas fa-arrow-right"></i></button>
+                                <button type="button" class="btn signin-btn">se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev visually-hidden" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+            <button class="carousel-control-next visually-hidden" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+		<div class="secton">
+	<div class="comment p-5 text-center">
+            <h2 ">COMMENT ÇA FONCTIONNE ? ...</h2>
+            <h3>Téléchargez ... Diffusez ... et rien d'autre !</h3>
+        </div>
+    <div class="container">
+            
+
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h><i class="icon fas fa-prescription-bottle-alt "></i></h>
+                <div class="icon-overlay "></div>
+                <h3>Inscription</h3>
+                <p>Inscrivez votre radio en quelques secondes</p>
+            </div>
+        </div>
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h><i class="icon fas fa-newspaper "></i></h>
+                <h3>Accédez aux nouveautés musicales</h3>
+                <p>Aprés validation, vous accédez aux nouveautés musicales en format MP3.</p>
+            </div>
+        </div>
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h><i class="icon fas fa-piggy-bank "></i></h>
+                <h3>100% Gratuit</h3>
+                <p>Afin de préserver ce service gratuit, nous écoutons votre radio afin d'informer les producteurs de la diffusion de leur titre sur votre radio.</p>
+            </div>
+        </div>
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h><i class="icon fas fa-euro-sign "></i></h>
+                <h3>Opérations Rémunérées</h3>
+                <p>Vous êtes libre de participer à des opérations rémunérées qui sont proposées à votre radio afin de gagner de l'argent</p>
+            </div>
+        </div>
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h><i class="icon fas fa-microphone-alt "></i></h>
+                <h3>Emission Gratuite</h3>
+                <p>Chaque semaine nous vous proposons 3x1 heure d'émissions incluant les nouveautés Send4Média, vous êtes libre de la diffuser.</p>
+            </div>
+        </div>
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h> <i class="icon fas fa-headset "></i></h>
+                <h3>Support 24/7</h3>
+                <p>En cas de soucis, notre support est à votre disposition.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- START THE FEATURETTES -->
+
+			<div class="container mt-4">
+
+            <div class="row featurette mt-2 ">
+                <div class="col-md-6 featurette-content ">
+                    <h2 class="featurette-heading mt-2 ">Qu'est ce que Send4Média ?</h2>
+                    <p class="lead ">Send4Media est la première plateforme musicale gratuite destinée exclusivement aux radios digitales et FM. La plateforme propose aux radios de prendre connaissance des nouvelles promos et des nouveautés issues des labels, des maisons
+                        de disques et des producteurs. Les titres proviennent d'une maison de disque ou d'une production déjà intégrée dans les circuits promotionnels traditionnels et utilisés par l'industrie musicale (Promo club Extraclub, Yacast et
+                        radio). Cela ne signifie pas que le parfait inconnu n'a pas sa place, mais que son titre est évalué d'une manière tout à fait neutre par un comité d'écoute afin de définir si le titre peut correspondre à la ligne éditoriale d'une
+                        radio faisant partie du panel.</p>
+                </div>
+                <div class="col-md-6 featurette-img-left ">
+                    <img src="assets/img/pic1.jpg " class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto w-100 h-100 " alt="FEATURETES IMAGE ">
+
+                </div>
+            </div>
+            <div class="row featurette ">
+                <div class="col-md-6 order-md-2 featurette-content ">
+                    <h2 class="featurette-heading mt-4 ">Nouveautés et Rémunérations</span>
+                    </h2>
+                    <p class="lead ">Send4Media propose chaque semaine des nouveautés. Ces nouveautés proviennent autant de maisons de disques que de producteurs ou labels indépendants, qu'ils soient raccordés ou non à une major. Nous mettons un point d'honneur à écouter
+                        et sélectionner des nouveautés qui pourraient répondre à la ligne éditoriale ou à la programmation musicale des radios de notre panel. Send4Media propose aux radios faisant partie de notre panel, une rémunération dont le montant
+                        et les modalités sont indiquées à côté de chaque promo. Les détails sont indiqués dans votre compte. A vous de jouer!</p>
+                </div>
+                <div class="col-md-6 order-md-1 featurette-img-right ">
+                    <img src="assets/img/pic3.jpg " class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto w-100 h-100 " alt="FEATURETES IMAGE ">
+
+                </div>
+            </div>
+
+            <!-- /END THE FEATURETTES -->
+
+        </div>
+		
+        <!-- /.container -->
+
+
+        <div class="calltoaction ">
+            <div class="container ">
+                <div class="row justify-content-center ">
+                    <div class="col-md-3 ">
+                        <div class="content ">
+                            <i class="icon fas fa-compact-disc "></i>
+                            <div class="main-content ">
+                                <h2>4,301,388</h2>
+                                <p>TITRES SCANNÉS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="content ">
+                            <i class="icon fas fa-photo-video "></i>
+                            <div class="main-content ">
+                                <h2>3,509</h2>
+                                <p>TITRES PROPOSÉS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="content ">
+                            <i class="icon fas fa-user-tie "></i>
+                            <div class="main-content ">
+                                <h2>715</h2>
+                                <p>PRODUCTEURS ET LABELS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- pop up -->
+        <div class="login-popup ">
+            <form class="login-section ">
+                <div class="email-section ">
+                    <label class="form-label " for="InputEmail ">E-mail</label>
+                    <input type="email " class="input-box " name="email " id="InputEmail ">
+
+                    <div class="form-dev "></div>
+                    <div class="icon " path3>
+                        <svg preserveAspectRatio="none " viewBox="0 0 20 14 " class="form-icon ">
+                            <path d="M 18.125 0 L 1.875 0 C 0.8391666412353516 0 0 0.8951250910758972 0 2.000250101089478 L 0 11.99975109100342 C 0 13.1048755645752 0.8391666412353516 14.00000095367432 1.875 14.00000095367432 L 18.125 14.00000095367432
+            C 19.16083526611328 14.00000095367432 20 13.1048755645752 20 11.99975109100342 L 20 2.000250101089478 C 20 0.8951250910758972 19.16083526611328 0 18.125 0 Z M 2.5 1.333500027656555 L 17.5 1.333500027656555 C 17.68000030517578 1.333500027656555
+            17.85000038146973 1.375500202178955 18.00416564941406 1.448125004768372 L 10.52166843414307 8.553125381469727 C 10.40250015258789 8.650250434875488 10.22500038146973 8.716750144958496 10.04750061035156 8.716750144958496 C 9.872501373291016 8.716750144958496
+            9.70583438873291 8.653750419616699 9.565834045410156 8.534749984741211 L 2.200833559036255 1.376375079154968 C 2.297500133514404 1.351000070571899 2.396666526794434 1.333500027656555 2.5 1.333500027656555 Z M 1.25 2.66700005531311 C 1.25 2.533125162124634
+            1.274166822433472 2.406250238418579 1.308333516120911 2.284625291824341 L 6.224166870117188 7.062125682830811 L 1.309166789054871 11.71975135803223 C 1.274166822433472 11.59637546539307 1.25 11.46862506866455 1.25 11.33300018310547 L 1.25 2.66700005531311
+            Z M 17.5 12.66650009155273 L 2.5 12.66650009155273 C 2.410000085830688 12.66650009155273 2.323333740234375 12.65600109100342 2.238333463668823 12.63675117492676 L 7.160834312438965 7.97212553024292 L 8.764167785644531 9.530500411987305 C 9.536666870117188
+            10.18850040435791 10.58333301544189 10.16225051879883 11.31250095367432 9.558501243591309 L 12.9116678237915 8.040375709533691 L 17.76166534423828 12.63675117492676 C 17.67666816711426 12.65600109100342 17.59000205993652 12.66650009155273 17.5
+            12.66650009155273 Z M 18.75 11.33300018310547 C 18.75 11.46862506866455 18.72583389282227 11.59637546539307 18.69083404541016 11.71975135803223 L 13.85833358764648 7.140875339508057 L 18.7350025177002 2.511250257492065 C 18.74083518981934 2.562875270843506
+            18.75 2.613625049591064 18.75 2.66700005531311 L 18.75 11.33300018310547 Z "  />
+                        </svg>
+                    </div>
+                </div>
+                <div class="password-section ">
+                    <label class="form-label " for="InputPassword ">Mot de passe</label>
+                    <input type="password " class="input-box " name="password " id="InputPassword ">
+                    <div class="form-dev "></div>
+                    <div class="icon ">
+                        <svg preserveAspectRatio="none " viewBox="0 0 16 20 " class="form-icon ">
+                            <path d="M 12.92300033569336 7.5 L 12.92300033569336 5 C 12.92300033569336 2.23799991607666 10.7189998626709 0 8 0 C 5.281000137329102 0 3.07699990272522 2.23799991607666 3.07699990272522 5 L 3.07699990272522 7.5 L 1.230999946594238
+            7.5 C 0.5509999990463257 7.5 0 8.060000419616699 0 8.75 L 0 18.75 C 0 19.44000053405762 0.5509999990463257 20 1.230999946594238 20 L 14.76900005340576 20 C 15.44900035858154 20 16 19.44000053405762 16 18.75 L 16 8.75 C 16 8.060000419616699 15.44900035858154
+            7.5 14.76900005340576 7.5 L 12.92300033569336 7.5 Z M 4.922999858856201 5 C 4.922999858856201 3.276999950408936 6.302999973297119 1.875 8 1.875 C 9.696000099182129 1.875 11.07699966430664 3.276999950408936 11.07699966430664 5 L 11.07699966430664
+            7.5 L 4.922999858856201 7.5 L 4.922999858856201 5 Z M 14.1540002822876 18.125 L 1.845999956130981 18.125 L 1.845999956130981 9.375 L 14.1540002822876 9.375 L 14.1540002822876 18.125 Z "  />
+                        </svg>
+                    </div>
+                </div>
+                <div class="button-section ">
+                    <input type="button " class="form-button " name="submit " id="loginbtn " value="se connecter ">
+                    <div class="icon ">
+                        <svg preserveAspectRatio="none " viewBox="-0.0010886192321777344 0.002507507801055908 14 10 " class="form-icon "><path d="M 8.570568084716797 9.877786636352539 C 8.292642593383789 9.585402488708496 8.292642593383789 9.140152931213379
+            8.570568084716797 8.847768783569336 L 11.57804679870605 5.773736000061035 L 0.7088392972946167 5.773736000061035 C 0.2860000729560852 5.743696689605713 -0.03042927011847496 5.392570018768311 0.001073650550097227 4.990709781646729 C 0.02977631241083145
+            4.630904197692871 0.3308041989803314 4.34519624710083 0.7088392972946167 4.317827701568604 L 11.57804679870605 4.317827701568604 L 8.570568084716797 1.244464516639709 C 8.292642593383789 0.9520809650421143 8.292642593383789 0.507498025894165 8.570568084716797
+            0.2151146233081818 C 8.821891784667969 -0.04923201352357864 9.251031875610352 -0.06992581486701965 9.528957366943359 0.169054239988327 C 9.546459197998047 0.1837401539087296 9.562560081481934 0.1990936249494553 9.577961921691895 0.2151146233081818
+            L 13.79655265808105 4.526100635528564 L 13.83785724639893 4.572828769683838 L 13.83785724639893 4.572828769683838 C 13.84625720977783 4.580839157104492 13.85395908355713 4.589517116546631 13.86095809936523 4.598863124847412 L 13.86095809936523
+            4.604870319366455 L 13.86935997009277 4.614883422851563 L 13.86935997009277 4.614883422851563 L 13.87846088409424 4.626231670379639 L 13.87846088409424 4.634910106658936 L 13.88406085968018 4.638915061950684 L 13.89036083221436 4.648928165435791
+            L 13.89036083221436 4.654936790466309 L 13.89036083221436 4.66227912902832 L 13.89946174621582 4.673627376556396 C 13.9652681350708 4.787109375 13.99957084655762 4.914609909057617 13.99887180328369 5.044113159179688 C 14.00027179718018 5.173616409301758
+            13.9652681350708 5.301116466522217 13.89946174621582 5.413931846618652 L 13.89036083221436 5.427282333374023 L 13.89036083221436 5.434625625610352 L 13.89036083221436 5.440632820129395 L 13.88406085968018 5.450645923614502 L 13.87846088409424
+            5.454651832580566 L 13.87846088409424 5.463329315185547 L 13.86935997009277 5.473342418670654 L 13.86935997009277 5.473342418670654 L 13.86095809936523 5.48335599899292 L 13.86095809936523 5.488696098327637 L 13.83785724639893 5.514730453491211
+            L 13.83785724639893 5.514730453491211 L 13.79655265808105 5.560122966766357 L 9.577961921691895 9.872445106506348 C 9.577961921691895 9.872445106506348 8.849194526672363 10.16149044036865 8.570568084716797 9.877786636352539 Z "  />
+                        </svg>
+                    </div>
+                </div>
+                <div class="iconClose ">
+                    <svg preserveAspectRatio="none " viewBox="0.0002250075340270996 -0.0004500150680541992 11.8994140625 11.89990234375 " class="union "><path d="M 10.19250011444092 11.60640048980713 L 5.949707508087158 7.363607406616211 L 1.707300066947937
+            11.60640048980713 C 1.316699981689453 11.9970006942749 0.6840000152587891 11.9970006942749 0.2934000194072723 11.60640048980713 C -0.09719999879598618 11.21580028533936 -0.09719999879598618 10.582200050354 0.2934000194072723 10.19159984588623
+            L 4.535550117492676 5.949450016021729 L 0.2925000190734863 1.706400036811829 C -0.09719999879598618 1.315800070762634 -0.09719999879598618 0.6831000447273254 0.2925000190734863 0.2925000190734863 C 0.6831000447273254 -0.09809999912977219 1.316699981689453
+            -0.09809999912977219 1.707300066947937 0.2925000190734863 L 5.949900150299072 4.535099983215332 L 10.19250011444092 0.2925000190734863 C 10.58310031890869 -0.09809999912977219 11.21580028533936 -0.09809999912977219 11.60640048980713 0.2925000190734863
+            C 11.9970006942749 0.6831000447273254 11.9970006942749 1.315800070762634 11.60640048980713 1.706400036811829 L 7.363993167877197 5.949193000793457 L 11.60640048980713 10.19159984588623 C 11.9970006942749 10.582200050354 11.9970006942749 11.21580028533936
+            11.60640048980713 11.60640048980713 C 11.41110038757324 11.80170059204102 11.15527534484863 11.8993501663208 10.89945030212402 11.8993501663208 C 10.64362525939941 11.8993501663208 10.3878002166748 11.80170059204102 10.19250011444092 11.60640048980713
+            Z "  />
+                    </svg>
+                </div>
+                <div class="forget-section ">
+                    <a href="# " class="forget-link ">Mot de passe oublié ?</a>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="signup-popup ">
+            <div class="signup-section ">
+                <div class="CloseSection ">
+                    <div class="close-outline "></div>
+                    <div class="close-inline "></div>
+                    <svg preserveAspectRatio="none " viewBox="0.0002250075340270996 -0.0004500150680541992 11.8994140625 11.89990234375 " class="union2 ">
+                        <path d="M 10.19250011444092 11.60640048980713 L 5.949707508087158 7.363607406616211 L 1.707300066947937 11.60640048980713 C 1.316699981689453 11.9970006942749 0.6840000152587891 11.9970006942749 0.2934000194072723 11.60640048980713
+            C -0.09719999879598618 11.21580028533936 -0.09719999879598618 10.582200050354 0.2934000194072723 10.19159984588623 L 4.535550117492676 5.949450016021729 L 0.2925000190734863 1.706400036811829 C -0.09719999879598618 1.315800070762634 -0.09719999879598618
+            0.6831000447273254 0.2925000190734863 0.2925000190734863 C 0.6831000447273254 -0.09809999912977219 1.316699981689453 -0.09809999912977219 1.707300066947937 0.2925000190734863 L 5.949900150299072 4.535099983215332 L 10.19250011444092 0.2925000190734863
+            C 10.58310031890869 -0.09809999912977219 11.21580028533936 -0.09809999912977219 11.60640048980713 0.2925000190734863 C 11.9970006942749 0.6831000447273254 11.9970006942749 1.315800070762634 11.60640048980713 1.706400036811829 L 7.363993167877197
+            5.949193000793457 L 11.60640048980713 10.19159984588623 C 11.9970006942749 10.582200050354 11.9970006942749 11.21580028533936 11.60640048980713 11.60640048980713 C 11.41110038757324 11.80170059204102 11.15527534484863 11.8993501663208 10.89945030212402
+            11.8993501663208 C 10.64362525939941 11.8993501663208 10.3878002166748 11.80170059204102 10.19250011444092 11.60640048980713 Z "  />
+                    </svg>
+                </div>
+                <div class="form-section ">
+                    <div class="form-box ">
+                        <input type="button " class="signupbtn " value="OUVRIR UN COMPTE " />
+                        <div class="iconArrow ">
+                            <svg preserveAspectRatio="none " viewBox="-0.0010886192321777344 0.002507507801055908 14 10 " class="btnicon "><path d="M 8.570568084716797 9.877786636352539 C 8.292642593383789 9.585402488708496 8.292642593383789 9.140152931213379
+            8.570568084716797 8.847768783569336 L 11.57804679870605 5.773736000061035 L 0.7088392972946167 5.773736000061035 C 0.2860000729560852 5.743696689605713 -0.03042927011847496 5.392570018768311 0.001073650550097227 4.990709781646729 C 0.02977631241083145
+            4.630904197692871 0.3308041989803314 4.34519624710083 0.7088392972946167 4.317827701568604 L 11.57804679870605 4.317827701568604 L 8.570568084716797 1.244464516639709 C 8.292642593383789 0.9520809650421143 8.292642593383789 0.507498025894165 8.570568084716797
+            0.2151146233081818 C 8.821891784667969 -0.04923201352357864 9.251031875610352 -0.06992581486701965 9.528957366943359 0.169054239988327 C 9.546459197998047 0.1837401539087296 9.562560081481934 0.1990936249494553 9.577961921691895 0.2151146233081818
+            L 13.79655265808105 4.526100635528564 L 13.83785724639893 4.572828769683838 L 13.83785724639893 4.572828769683838 C 13.84625720977783 4.580839157104492 13.85395908355713 4.589517116546631 13.86095809936523 4.598863124847412 L 13.86095809936523
+            4.604870319366455 L 13.86935997009277 4.614883422851563 L 13.86935997009277 4.614883422851563 L 13.87846088409424 4.626231670379639 L 13.87846088409424 4.634910106658936 L 13.88406085968018 4.638915061950684 L 13.89036083221436 4.648928165435791
+            L 13.89036083221436 4.654936790466309 L 13.89036083221436 4.66227912902832 L 13.89946174621582 4.673627376556396 C 13.9652681350708 4.787109375 13.99957084655762 4.914609909057617 13.99887180328369 5.044113159179688 C 14.00027179718018 5.173616409301758
+            13.9652681350708 5.301116466522217 13.89946174621582 5.413931846618652 L 13.89036083221436 5.427282333374023 L 13.89036083221436 5.434625625610352 L 13.89036083221436 5.440632820129395 L 13.88406085968018 5.450645923614502 L 13.87846088409424
+            5.454651832580566 L 13.87846088409424 5.463329315185547 L 13.86935997009277 5.473342418670654 L 13.86935997009277 5.473342418670654 L 13.86095809936523 5.48335599899292 L 13.86095809936523 5.488696098327637 L 13.83785724639893 5.514730453491211
+            L 13.83785724639893 5.514730453491211 L 13.79655265808105 5.560122966766357 L 9.577961921691895 9.872445106506348 C 9.577961921691895 9.872445106506348 8.849194526672363 10.16149044036865 8.570568084716797 9.877786636352539 Z "  /></svg>
+                        </div>
+                    </div>
+                    <div class="header-text ">ouvrir un compte producteur/label</div>
+                    <div class="firstN-section ">
+                        <label class="input-label ">Votre organisme</label>
+                        <input type="text " class="formInput " />
+                        <div class="input-dr "></div>
+                    </div>
+                    <div class="lastN-section ">
+                        <div class="input-label ">Votre Nom & Prénom</div>
+                        <input type="text " class="formInput " />
+                        <div class="input-dr "></div>
+                    </div>
+                    <div class="email-section ">
+                        <div class="input-label ">Votre adresse e-mail</div>
+                        <input type="email " class="formInput " />
+                        <div class="input-dr "></div>
+                    </div>
+                    <div class="password-section ">
+                        <div class="input-label ">Choisir un Mot de passe</div>
+                        <input type="email " class="formInput " />
+                        <div class="input-dr "></div>
+                    </div>
+                    <div class="cpassword-section ">
+                        <div class="input-label ">Confirmer le Mot de passe</div>
+                        <input type="email " class="formInput " />
+                        <div class="input-dr "></div>
+                    </div>
+                    <div class="address-section ">
+                        <div class="input-label ">Votre adresse postale</div>
+                        <input type="email " class="formInput " />
+                        <div class="input-dr "></div>
+                    </div>
+                    <div class="postal-section ">
+
+                        <div class="input-label ">Code postal</div>
+                        <input type="email " class="formInput " />
+                        <div class="input-dr "></div>
+                    </div>
+                    <div class="state-section ">
+
+                        <div class="input-label ">Ville</div>
+                        <input type="email " class="formInput " />
+                        <div class="input-dr "></div>
+                    </div>
+                    <div class="tel-section ">
+                        <div class="input-label ">Téléphone</div>
+                        <input type="email " class="formInput " />
+                        <div class="input-dr "></div>
+                    </div>
+                    <div class="checkbox ">
+                        <input type="checkbox " class="inputcheck " />
+                    </div>
+                    <div class="terms-box ">
+                        <span class="terms-box-0 ">J'accepte les </span>
+                        <a href="# " class="terms-box-14 ">Conditions Générales d'Utilisation</a>
+                        <span class="terms-box-48 "> sans réserve.</span>
+                    </div>
+
+                    <div class="Select-section ">
+                        <div class="input-label ">Pays</div>
+                        <select class="select-box ">
+                            <option value="Antarctique ">Antarctique</option>
+                            <option value="Albanie ">Albanie</option>
+                            <option value="Afghanistan ">Afghanistan</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer ">
+
+            <div class="container ">
+                <div class="footer-start ">
+                    <div class="row ">
+                        <div class="col-md-3 ">
+                            <div class="footer-section-1 ">
+                                <div class="footer-logo ">
+                                    <img class="img-fluid " src="./assets/img/logo-S4M-white@2x.png " alt="send4media ">
+                                </div>
+                                <div class="content ">
+                                    <p>
+                                        S-Radio 34B Chemin de Argentons 84510 Caumont sur Durance France
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 ">
+                            <ul class="footer-nav ">
+                                <li>Accueil</li>
+                                <li>Fonctionnalités</li>
+                                <li>à propos</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 ">
+                            <ul class="footer-nav ">
+                                <li>Partenaires</li>
+                                <li>Syndication Radio <br>Banque de Programmes et Services Radios</li>
+                                <li>Zadioo</li>
+                                <li>Structure pour Producteurs</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="footer-section-4 ">
+                                <div class="footer-header ">
+                                    <p>Politique d'utilisation</p>
+                                </div>
+                                <div class="footer-content ">
+                                    <p>Toutes les radios peuvent solliciter une inscription et un accés au service de Send4Media. Send4Media et ses partenaires se réservent le droit d'accepter ou refuser une demande de souscription au service qui ne serait
+                                        pas conforme à notre charte déontologique ou aux conditions générales de souscription.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-end ">
+                    <div class="row ">
+                        <div class="col-md-5 ">
+                            <p class="copyright ">Copyright ©2020 SyndicationRadio. Tous droit réservés.</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="section-srcoll" id="srcoll-fs">
+                                <svg preserveAspectRatio="none" viewBox="2.198854923248291 2.9875900745391846 32 23.9998779296875" class="srcoll-outside">
+                                    <path d="M 16.10097122192383 4.013661861419678 C 17.0346508026123 2.64556622505188 19.3630542755127 2.64556622505188 20.29673385620117 4.013661861419678 L 33.8690071105957 23.90074729919434 C 34.80462646484375 25.27167892456055 33.63848876953125 26.98748207092285 31.77112770080566 26.98748207092285 L 4.626581192016602 26.98748207092285 C 2.759217739105225 26.98748207092285 1.593083262443542 25.27167892456055 2.528700590133667 23.90074729919434 L 16.10097122192383 4.013661861419678 Z"  />
+                                </svg>
+                                <svg preserveAspectRatio="none" viewBox="0 0 8 5.004638671875" class="srcoll-inside">
+                                    <path d="M 1.00480043888092 0.2179277092218399 L 3.998799562454224 3.495943069458008 L 7.032000064849854 0.1751609742641449 L 7.032000064849854 0.1756158173084259 C 7.134799957275391 0.06687922775745392 7.274400234222412 0 7.428399562835693 0 C 7.744000434875488 0 8 0.2802577018737793 8 0.6255751848220825 C 8 0.7943668365478516 7.938799381256104 0.9472346901893616 7.839600563049316 1.059611201286316 L 7.840000152587891 1.060065984725952 L 4.411200046539307 4.813519477844238 L 4.411200046539307 4.813064575195313 C 4.307199954986572 4.930900096893311 4.161600112915039 5.004603862762451 4 5.004603862762451 C 3.999599933624268 5.004603862762451 3.999200105667114 5.004603862762451 3.998799562454224 5.004603862762451 C 3.998400211334229 5.004603862762451 3.997999906539917 5.004603862762451 3.997599840164185 5.004603862762451 C 3.835999727249146 5.004603862762451 3.690399885177612 4.930900096893311 3.586399793624878 4.813064575195313 L 3.585999727249146 4.813519477844238 L 0.1575996428728104 1.060065984725952 L 0.1587997376918793 1.058245897293091 C 0.06039962917566299 0.9458694458007813 0 0.7934570908546448 0 0.6255751848220825 C 0 0.2802577018737793 0.2559997737407684 0 0.5716003179550171 0 C 0.7447998523712158 0 0.8999999165534973 0.0846230611205101 1.00480043888092 0.2179277092218399 Z"  />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-md-5 ">
+                            <div class="social ">
+                                <div class="icon ">
+                                    <img class="img-fluid " src="./assets/img/iconFacebook.png " alt=" ">
+                                </div>
+                                <div class="icon ">
+                                    <img class="img-fluid " src="./assets/img/iconInstagram.png " alt=" ">
+                                </div>
+                                <div class="icon ">
+                                    <img class="img-fluid " src="./assets/img/iconTwitter.png " alt=" ">
+                                </div>
+                                <div class="icon ">
+                                    <img class="img-fluid " src="./assets/img/iconGoogle.png " alt=" ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="subscribe " href="https://www.send4media.com/radio-subscrire-fr.html " title="inscrire une Radio ">
+                <i class="icon fas fa-envelope-open "></i>
+            </a>
+        </footer>
+
+
+    </main>
+
+
+
+
+    <script src="assets/jquery-3.5.1.min.js "></script>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js "></script>
+    <script src="assets/main.js "></script>
+    <!-- FontAwesome Js v5.15.2 -->
+    <script defer src="assets/fontawesome/js/all.min.js "></script>
+</body>
+
+</html>
